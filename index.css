@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  white-space: nowrap;
+}
+
+nav li {
+  text-align: center;
+}
+
+.dropdown {
+  color: #fff;
+  padding: 0.7em 1em;
+}
+.sub-navigation {
+  display: none;
+}
+
+.dropdown:hover .sub-navigation {
+  display: flex;
+  position: absolute;
+  opacity: 0.8;
+  margin-left: -20px;
+  margin-top: 14px;
+  background-color: #333;
+  width: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+.dropdown ul li:hover {
+  color: hotpink;
+}
+
+.navigation {
+  display: flex;
+  font-size: 1.3rem;
+  background-color: #333333;
+  background-image: url(images/logo-amadzuki.svg);
+  background-repeat: no-repeat;
+  background-size: 5em 2.5em;
+  padding: 0;
+  justify-content: center;
+}
+
+.navigation > * {
+  display: block;
+  color: #ffffff;
+  padding: 0.7em 1em;
+}
+.navigation a:hover,
+.dropdown:hover {
+  background-color: rgb(80, 73, 80);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin-top: 2em;
+  background-color: white;
+  padding-bottom: 0.7em;
+  border-radius: 1rem;
+}
+
+.card-image img {
+  max-width: 600px;
+}
+
+.intro p {
+  width: 600px;
+  text-align: center;
+}
+
+main .photo {
+  height: 400px;
+  width: 600px;
+  background-image: linear-gradient(
+      hsla(360, 100%, 100%, 0),
+      hsla(0, 0%, 20%, 1)
+    ),
+    url("images/marzuki.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.photo h1 {
+  font-weight: 700;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-right: 1em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 1em;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.footer p span {
+  margin: 0 3px;
+}
+
+.footer a {
+  color: rgb(122, 180, 214);
+}
+
+.contact {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration img {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.subcard {
+  display: flex;
+  margin: 1rem;
+}
+
+.subcard > * {
+  margin: 1em;
+}
+
+input,
+textarea {
+  font-size: 1.2em;
+  padding: 5px;
+  font-family: inherit;
+  margin: 2px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 2px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
